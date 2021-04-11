@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+class Node {
+public:
+	int data;
+	Node* next;
+	Node (int d, Node* n) {
+		data = d;
+		next = n;
+	}
+};
+int main() {
+	Node* o1 = new Node(0, NULL);
+	Node* o2 = new Node(0, NULL);
+	Node* o3 = new Node(0, NULL);
+	Node* m1 = new Node(0, NULL);
+	Node* m2 = new Node(0, NULL);
+	Node* m3 = new Node(0, NULL);
+	Node* m4 = new Node(0, NULL);
+	Node* m5 = new Node(0, NULL);
+	Node* a1 = new Node(0, NULL);
+	Node* a2 = new Node(0, NULL);
+	Node* a3 = new Node(0, NULL);
+	Node* a4 = new Node(0, NULL);
+	Node* r1 = new Node(0, NULL);
+	Node* r2 = new Node(0, NULL);
+	Node* r3 = new Node(0, NULL);
+	o1->next = o2;
+	o2->next = o3;
+	o3->next = o1;
+	m1->next = m2;
+	m2->next = m3;
+	m3->next = m4;
+	m4->next = m5;
+	a1->next = a2;
+	a2->next = a3;
+	a3->next = a1;
+	a3->next = a4;
+	r1->next = r2;
+	r2->next = r3;
+}
